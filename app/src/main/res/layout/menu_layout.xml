@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4CCFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo">
+        </ImageView>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_logout"
+            android:layout_gravity="end"
+            android:layout_marginTop="-50dp"
+            android:paddingBottom="1dp" />
+
+        <EditText
+            android:id="@+id/busca"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordinha"
+            android:hint="Buscar"
+            android:inputType="textPersonName"
+            android:maxLength="100"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bem-Vinda!"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:paddingLeft="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="-20dp"
+            android:layout_gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_policia"
+                android:layout_width="175dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="7dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baseline_phone"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/btn_policia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="190"
+                    android:textSize="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="57dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_perfil"
+                android:layout_width="175dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="7dp"
+                android:layout_toRightOf="@id/card_policia">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baseline_person"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"/>
+
+                <Button
+                    android:id="@+id/btn_perfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Meu perfil"
+                    android:textSize="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="57dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_documentos"
+                android:layout_width="175dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="7dp"
+                android:layout_below="@id/card_policia">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baseline_books"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"/>
+
+                <Button
+                    android:id="@+id/btn_documentos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Documentos"
+                    android:textSize="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="57dp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_dicas"
+                android:layout_width="175dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="7dp"
+                android:layout_below="@id/card_perfil"
+                android:layout_toRightOf="@id/card_documentos">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baseline_tips"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/btn_dicas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dicas"
+                    android:textSize="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="57dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_sobre"
+                android:layout_width="175dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="7dp"
+                android:layout_below="@id/card_documentos">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baseline_about"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/btn_sobre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sobre nós"
+                    android:textSize="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="57dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_contato"
+                android:layout_width="175dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="7dp"
+                android:layout_below="@id/card_dicas"
+                android:layout_toRightOf="@id/card_sobre">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baseline_contact_support"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/btn_contato"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contato"
+                    android:textSize="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="57dp"/>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

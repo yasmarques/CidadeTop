@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:background="#E4CCFF">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        tools:ignore="ImageContrastCheck"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="130dp"/>
+
+    <EditText
+        android:id="@+id/sobrenos"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:text="O aplicativo se trata de uma organização a fim de ajudar mulheres com medidas protetivas em ação."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginTop="400dp"
+        android:layout_centerVertical="true"/>
+
+    <EditText
+        android:id="@+id/nomes"
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:text="Sophia Sodré e Yasmin Marques"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="650dp"
+        android:gravity="bottom"
+        android:textAlignment="center"
+        />
+
+
+</RelativeLayout>
